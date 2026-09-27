@@ -1,0 +1,36 @@
+{
+  "name": "@red-bird-international/github-config",
+  "version": "1.0.0",
+  "description": "This repository contains files that are global to the organization (e.g. `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, etc.). They are the defaults in all repositories under `ietf-tools`, unless a local one is present. Includes Vercel Web Analytics integration.",
+  "main": "analytics-integration.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o analytics-setup.html",
+    "deploy": "vercel",
+    "deploy:prod": "vercel --prod",
+    "test": "echo \"No tests configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RED-BIRD-INTERNATIONAL/.github.git"
+  },
+  "keywords": [
+    "analytics",
+    "vercel",
+    "web-analytics",
+    "organization",
+    "github"
+  ],
+  "author": "RED BIRD INTERNATIONAL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RED-BIRD-INTERNATIONAL/.github/issues"
+  },
+  "homepage": "https://github.com/RED-BIRD-INTERNATIONAL/.github#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "public": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/analytics-setup.html"
+    }
+  ],
+  "buildCommand": "echo 'No build required for static site'",
+  "outputDirectory": ".",
+  "analytics": {
+    "enable": true
+  }
+}
